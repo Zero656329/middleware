@@ -11,19 +11,20 @@
 
     <artifactId>api</artifactId>
     <properties>
-       <lombok.version>1.16.10</lombok.version>
+        <lombok.version>1.16.10</lombok.version>
         <jackson-annotations-version>2.6.5</jackson-annotations-version>
     </properties>
-    <dependencies>
+<dependencies>
     <dependency>
         <groupId>org.projectlombok</groupId>
         <artifactId>lombok</artifactId>
         <version>${lombok.version}</version>
     </dependency>
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-annotations</artifactId>
-            <version>${jackson-annotations-version}</version>
-        </dependency>
-    </dependencies>
+    <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-annotations</artifactId>
+        <version>${jackson-annotations-version}</version>
+        <scope>compile</scope>
+    </dependency>
+</dependencies>
 </project>
